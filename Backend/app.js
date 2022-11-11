@@ -16,7 +16,7 @@ app.use("/api/user", router);
 app.use("/api/blog", blogRouter);
 
 mongoose
-  .connect("mongodb://localhost:27017/blogpost")
+  .connect("mongodb+srv://admin:nwachukwu@cluster0.am9nspx.mongodb.net/blogpost?retryWrites=true&w=majority")
   .then(() => app.listen(5000))
   .then(() =>
     console.log("Connected to Database and Listening to Localhost 5000")
